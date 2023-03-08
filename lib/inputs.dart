@@ -17,7 +17,6 @@ class _InputsState extends State<Inputs> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
       child: TextField(
-        obscureText: true,
         decoration: InputDecoration(
           icon: widget.icon,
           iconColor: Colors.indigo,
