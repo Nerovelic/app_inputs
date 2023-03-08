@@ -12,9 +12,27 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: const [
-          Inputs(labelNombre: 'Nombre Usuario', icon: Icon(Icons.people_alt_rounded),),
-          Inputs(labelNombre: 'Dirección', icon: Icon(Icons.mail_outline_rounded),),
-          Inputs(labelNombre: 'Telefono', icon: Icon(Icons.phone_android_rounded), icon2: Icon(Icons.numbers_rounded),)
+          Inputs(
+              labelNombre: 'Nombre Usuario', 
+              helpText: "Este campo es para el nombre",
+              icon: Icon(Icons.people_alt_rounded),
+              icon2: Icon(Icons.people_alt_rounded), 
+              type: TextInputType.name,
+            ),
+          Inputs(
+              labelNombre: 'Dirección', 
+              helpText: "Este campo es para el dirrecion",
+              icon: Icon(Icons.mail_outline_rounded), 
+              icon2: Icon(Icons.mail_rounded), 
+              type: TextInputType.emailAddress,
+            ),
+          Inputs(
+              labelNombre: 'Telefono', 
+              helpText: "Este campo es para el telefono",
+              icon: Icon(Icons.phone_android_rounded), 
+              icon2: Icon(Icons.numbers_rounded), 
+              type: TextInputType.phone,
+            )
         ],
       ) ,
     );
