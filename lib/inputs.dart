@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Inputs extends StatefulWidget {
-  const Inputs({super.key, required this.labelNombre, this.helpText = "" ,required this.icon, this.icon2 = const Icon(null), this.type = TextInputType.text});
+  const Inputs({super.key, this.labelNombre = "", this.helpText = "" ,this.icon = const Icon(null), this.icon2 = const Icon(null), this.type = TextInputType.text});
   final String labelNombre;
   final Icon icon;
   final Icon icon2;
